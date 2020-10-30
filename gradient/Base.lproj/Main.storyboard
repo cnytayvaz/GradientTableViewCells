@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gradient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvY-8g-n9z">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gem-RT-hjE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IvY-8g-n9z" secondAttribute="trailing" id="5sB-KD-WZh"/>
+                            <constraint firstItem="IvY-8g-n9z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8Ll-kz-nvn"/>
+                            <constraint firstItem="gem-RT-hjE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PXI-at-pcd"/>
+                            <constraint firstItem="gem-RT-hjE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="R4q-AS-hvB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gem-RT-hjE" secondAttribute="bottom" id="W2P-qm-dUU"/>
+                            <constraint firstItem="IvY-8g-n9z" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dSD-Hd-YVy"/>
+                            <constraint firstItem="IvY-8g-n9z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oG4-WV-n1e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gem-RT-hjE" secondAttribute="trailing" id="zjs-lx-R3o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gradientView" destination="IvY-8g-n9z" id="XNC-4t-6Vj"/>
+                        <outlet property="gradientViewTopContraint" destination="8Ll-kz-nvn" id="AOi-wf-oyn"/>
+                        <outlet property="tableView" destination="gem-RT-hjE" id="vXZ-O1-BXA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
